@@ -1,0 +1,51 @@
+[package]
+name = "vault"
+version = "0.1.0"
+description = "A local-first, encrypted API key and token manager."
+authors = ["Flechazo"]
+edition = "2021"
+
+[lib]
+name = "vault_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# ── Cryptography ────────────────────────────────────────────
+# AES-256-GCM: chosen for authenticated encryption (confidentiality + integrity).
+# Using 256-bit key size as standard for sensitive data.
+aes-gcm = "0.10"
+# Argon2id: memory-hard KDF, resistant to GPU/ASIC attacks.
+# Selected over bcrypt/scrypt for superior side-channel resistance.
+argon2 = "0.5"
+
+# ── Utilities ───────────────────────────────────────────────
+# rand: CSPRNG for generating salts, nonces, and vault keys.
+rand = "0.8"
+# chrono: ISO 8601 timestamps for audit trail.
+chrono = { version = "0.4", features = ["serde"] }
+# base64: encode binary ciphertext/salts/nonces as safe strings.
+base64 = "0.22"
+# zeroize: securely zero memory when secrets are dropped.
+zeroize = { version = "1", features = ["zeroize_derive"] }
+# thiserror: idiomatic error types with Display/Error impls.
+thiserror = "1"
+# uuid: unique identifiers for vault entries.
+uuid = { version = "1", features = ["v4"] }
+# arboard: platform-native clipboard for secure copy/clear.
+arboard = "3"
+# windows: Win32 API for proper clipboard clearing on Windows.
+# Win32 DataExchange: EmptyClipboard (clears Ctrl+V content).
+# Win+V clipboard history is cleared via PowerShell + WinRT as a fallback.
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.61", features = ["Win32_Foundation", "Win32_System_DataExchange"] }
+
+

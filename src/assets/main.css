@@ -1,0 +1,229 @@
+/* ── Global Styles ──────────────────────────────────────────
+   Design philosophy: Minimalist, calm, restrained, deliberate.
+   "Quiet luxury" — refined but not flashy.
+  
+   Color palette: warm gray / off-white, low saturation.
+   ──────────────────────────────────────────────────────── */
+
+/* ── Reset & Base ──────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f6f4f0;
+  color: #2c2a28;
+  line-height: 1.5;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* ── Typography ─────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1f1d1b;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
+
+p {
+  color: #5a5652;
+  line-height: 1.6;
+}
+
+small, .text-small {
+  font-size: 0.8rem;
+  color: #8a8580;
+}
+
+/* ── Links ──────────────────────────────────────────────── */
+a {
+  color: #7a6f66;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: #4a423d;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  outline: none;
+}
+
+button:focus-visible {
+  box-shadow: 0 0 0 2px rgba(122, 111, 102, 0.3);
+}
+
+.btn-primary {
+  background-color: #7a6f66;
+  color: #ffffff;
+  padding: 0.55rem 1.25rem;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #635a52;
+}
+
+.btn-primary:active {
+  background-color: #4a423d;
+}
+
+.btn-secondary {
+  background-color: #e8e5e0;
+  color: #4a423d;
+  padding: 0.55rem 1.25rem;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background-color: #dcd8d2;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #5a5652;
+  padding: 0.45rem 0.75rem;
+  font-weight: 500;
+}
+
+.btn-ghost:hover {
+  background-color: #e8e5e0;
+  color: #2c2a28;
+}
+
+.btn-danger {
+  background-color: #d46a6a;
+  color: #ffffff;
+  padding: 0.55rem 1.25rem;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  background-color: #c05555;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #5a5652;
+  font-size: 1rem;
+}
+
+.btn-icon:hover {
+  background-color: #e8e5e0;
+  color: #2c2a28;
+}
+
+/* ── Inputs ─────────────────────────────────────────────── */
+input, textarea, select {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #2c2a28;
+  background-color: #ffffff;
+  border: 1px solid #ddd9d3;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #a09890;
+  box-shadow: 0 0 0 2px rgba(122, 111, 102, 0.12);
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b5b0a8;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2.5rem;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a5652;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d5d0ca;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0bab3;
+}
+
+/* ── Utility ────────────────────────────────────────────── */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.slide-enter-from {
+  transform: translateX(8px);
+  opacity: 0;
+}
+
+.slide-leave-to {
+  transform: translateX(-8px);
+  opacity: 0;
+}

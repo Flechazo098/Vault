@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "Vault",
+    "tagline": "API Key &amp; Token Manager"
+  },
+  "unlock": {
+    "tab_unlock": "Unlock",
+    "tab_create": "New Vault",
+    "label_password": "Master Password",
+    "placeholder_password": "Enter master password",
+    "placeholder_create_password": "Create master password (min. 8 chars)",
+    "label_confirm": "Confirm Password",
+    "placeholder_confirm": "Re-enter master password",
+    "btn_processing": "Processing…",
+    "btn_unlock": "Unlock Vault",
+    "btn_create": "Create Vault",
+    "hint_unlock": "Your vault is encrypted locally. No data ever leaves this device.",
+    "hint_create": "All data is encrypted with AES-256-GCM before touching disk.",
+    "error_min_length": "Master password must be at least 8 characters.",
+    "error_mismatch": "Passwords do not match.",
+    "error_weak_password": "Password is too weak. Try adding length, numbers, or special characters."
+  },
+  "topbar": {
+    "search_placeholder": "Search entries...",
+    "btn_new": "New",
+    "btn_lock": "Lock",
+    "btn_lock_title": "Lock Vault"
+  },
+  "strength": {
+    "none": "Too weak",
+    "weak": "Weak",
+    "fair": "Fair",
+    "strong": "Strong",
+    "perfect": "Perfect"
+  },
+  "sidebar": {
+    "label_categories": "Categories",
+    "all_entries": "All Entries",
+    "empty": "No categories yet"
+  },
+  "entry_list": {
+    "count": "{count} entry",
+    "count_plural": "{count} entries",
+    "empty": "No entries found"
+  },
+  "entry_detail": {
+    "label_description": "Description",
+    "no_description": "No description",
+    "label_secret": "Secret",
+    "btn_show": "Show",
+    "btn_hide": "Hide",
+    "btn_copy": "Copy",
+    "btn_copied": "Copied!",
+    "copy_hint": "Copied to clipboard — clears automatically after 15 seconds",
+    "label_created": "Created",
+    "label_updated": "Updated",
+    "label_last_used": "Last Used",
+    "never": "Never",
+    "date_placeholder": "—",
+    "tooltip_edit": "Edit",
+    "tooltip_delete": "Delete"
+  },
+  "entry_form": {
+    "title_new": "New Entry",
+    "title_edit": "Edit Entry",
+    "btn_cancel": "Cancel",
+    "btn_save": "Save Changes",
+    "btn_create": "Create Entry",
+    "label_name": "Name",
+    "placeholder_name": "e.g. GitHub Personal Access Token",
+    "label_type": "Type",
+    "label_category": "Category",
+    "new_category": "+ New Category…",
+    "placeholder_category": "Category name",
+    "label_description": "Description",
+    "placeholder_description": "What is this key/token used for?",
+    "label_secret": "Secret",
+    "label_secret_edit": "Secret (leave empty to keep current)",
+    "placeholder_secret": "Paste or type the API key or token",
+    "placeholder_secret_edit": "Leave empty to keep current secret"
+  },
+  "dashboard": {
+    "empty_title": "Select an entry or create a new one"
+  },
+  "confirm": {
+    "btn_cancel": "Cancel",
+    "btn_confirm": "Confirm",
+    "delete_title": "Delete Entry",
+    "delete_message": "Are you sure you want to delete '{name}'? This action cannot be undone.",
+    "btn_delete": "Delete"
+  },
+  "export": {
+    "btn_export": "Export",
+    "btn_export_title": "Export all entries as encrypted file",
+    "modal_title": "Export Vault",
+    "modal_desc": "Choose an export password. This is separate from your master password.",
+    "label_password": "Export Password",
+    "placeholder_password": "Create an export password",
+    "label_confirm": "Confirm Export Password",
+    "placeholder_confirm": "Re-enter export password",
+    "btn_export_action": "Export",
+    "error_mismatch": "Export passwords do not match.",
+    "error_weak": "Export password is too weak. Use at least 8 characters.",
+    "error_failed": "Export failed: {error}",
+    "success_title": "Export Complete",
+    "success_message": "Vault exported successfully."
+  },
+  "import": {
+    "btn_import": "Import",
+    "btn_import_title": "Import entries from an encrypted export file",
+    "modal_title": "Import Entries",
+    "modal_desc": "Select a previously exported .vault-encrypted file and provide the export password.",
+    "label_password": "Export Password",
+    "placeholder_password": "Enter the export password",
+    "btn_import_action": "Import",
+    "error_failed": "Import failed: {error}",
+    "error_wrong_password": "Wrong export password or corrupted file.",
+    "success_title": "Import Complete",
+    "success_message": "Successfully imported {count} entr(ies)."
+  },
+  "locale": {
+    "switch_to": "中文",
+    "label": "Language"
+  }
+}

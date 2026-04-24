@@ -1,0 +1,123 @@
+{
+  "app": {
+    "name": "Vault",
+    "tagline": "API 密钥和令牌管理器"
+  },
+  "unlock": {
+    "tab_unlock": "解锁",
+    "tab_create": "新建保险库",
+    "label_password": "主密码",
+    "placeholder_password": "输入主密码",
+    "placeholder_create_password": "创建主密码（至少 8 个字符）",
+    "label_confirm": "确认密码",
+    "placeholder_confirm": "再次输入主密码",
+    "btn_processing": "处理中…",
+    "btn_unlock": "解锁保险库",
+    "btn_create": "创建保险库",
+    "hint_unlock": "您的保险库在本地加密。数据永远不会离开此设备。",
+    "hint_create": "所有数据在写入磁盘前均使用 AES-256-GCM 加密。",
+    "error_min_length": "主密码至少需要 8 个字符。",
+    "error_mismatch": "两次输入的密码不一致。",
+    "error_weak_password": "密码强度太弱。建议增加长度、数字或特殊字符。"
+  },
+  "topbar": {
+    "search_placeholder": "搜索条目...",
+    "btn_new": "新建",
+    "btn_lock": "锁定",
+    "btn_lock_title": "锁定保险库"
+  },
+  "strength": {
+    "none": "太弱",
+    "weak": "弱",
+    "fair": "一般",
+    "strong": "强",
+    "perfect": "非常强"
+  },
+  "sidebar": {
+    "label_categories": "分类",
+    "all_entries": "全部条目",
+    "empty": "暂无分类"
+  },
+  "entry_list": {
+    "count": "{count} 个条目",
+    "count_plural": "{count} 个条目",
+    "empty": "未找到条目"
+  },
+  "entry_detail": {
+    "label_description": "描述",
+    "no_description": "无描述",
+    "label_secret": "密钥",
+    "btn_show": "显示",
+    "btn_hide": "隐藏",
+    "btn_copy": "复制",
+    "btn_copied": "已复制！",
+    "copy_hint": "已复制到剪贴板 —— 15 秒后自动清除",
+    "label_created": "创建时间",
+    "label_updated": "更新时间",
+    "label_last_used": "上次使用",
+    "never": "从未",
+    "date_placeholder": "—",
+    "tooltip_edit": "编辑",
+    "tooltip_delete": "删除"
+  },
+  "entry_form": {
+    "title_new": "新建条目",
+    "title_edit": "编辑条目",
+    "btn_cancel": "取消",
+    "btn_save": "保存更改",
+    "btn_create": "创建条目",
+    "label_name": "名称",
+    "placeholder_name": "例如：GitHub Personal Access Token",
+    "label_type": "类型",
+    "label_category": "分类",
+    "new_category": "+ 新建分类…",
+    "placeholder_category": "分类名称",
+    "label_description": "描述",
+    "placeholder_description": "此密钥/令牌用于什么？",
+    "label_secret": "密钥",
+    "label_secret_edit": "密钥（留空则保持当前值不变）",
+    "placeholder_secret": "粘贴或输入 API 密钥或令牌",
+    "placeholder_secret_edit": "留空以保持当前密钥不变"
+  },
+  "dashboard": {
+    "empty_title": "选择一个条目，或新建一个"
+  },
+  "confirm": {
+    "btn_cancel": "取消",
+    "btn_confirm": "确认",
+    "delete_title": "删除条目",
+    "delete_message": "确定要删除 '{name}' 吗？此操作不可撤销。",
+    "btn_delete": "删除"
+  },  "export": {
+    "btn_export": "导出",
+    "btn_export_title": "导出所有条目为加密文件",
+    "modal_title": "导出保管库",
+    "modal_desc": "选择一个导出密码。此密码与您的主密码不同。",
+    "label_password": "导出密码",
+    "placeholder_password": "创建导出密码",
+    "label_confirm": "确认导出密码",
+    "placeholder_confirm": "再次输入导出密码",
+    "btn_export_action": "导出",
+    "error_mismatch": "两次输入的导出密码不一致。",
+    "error_weak": "导出密码太弱，至少使用8个字符。",
+    "error_failed": "导出失败：{error}",
+    "success_title": "导出完成",
+    "success_message": "保管库导出成功。"
+  },
+  "import": {
+    "btn_import": "导入",
+    "btn_import_title": "从加密的导出文件中导入条目",
+    "modal_title": "导入条目",
+    "modal_desc": "选择之前导出的 .vault-encrypted 文件并提供导出密码。",
+    "label_password": "导出密码",
+    "placeholder_password": "输入导出密码",
+    "btn_import_action": "导入",
+    "error_failed": "导入失败：{error}",
+    "error_wrong_password": "导出密码错误或文件损坏。",
+    "success_title": "导入完成",
+    "success_message": "成功导入了 {count} 个条目。"
+  },  "locale": {
+    "switch_to": "English",
+    "label": "语言"
+  }
+}
