@@ -15,8 +15,8 @@ function getDefaultLocale(): string {
   return 'en';
 }
 
-const i18n = createI18n<[MessageSchema], 'en' | 'zh-CN'>({
-  legacy: false, // Use Composition API mode
+const i18n = createI18n<{ message: MessageSchema }, 'en' | 'zh-CN'>({
+  legacy: false,
   locale: getDefaultLocale(),
   fallbackLocale: 'en',
   messages: {
